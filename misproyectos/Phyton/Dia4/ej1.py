@@ -1,32 +1,33 @@
 saldo=1000
-repetir= True
-def retirar_monto(monto):
-    if monto<=saldo:
-        saldoac=saldo-monto
-        print(f"se retiro el monto deseado, su saldo quedo en ${saldoac}") 
-        repetir=False
-        return saldoac
-    elif monto>saldo:
-        print(f"Fondos insuficientes, su saldo sigue en:${saldo}")
-        repetir=True
-        return -1
-def ver_mon(pin):
-    if pin==1234:
+pinpr=1234
+def verificar_pin(pinin):
+    if pinin==pinpr:
         return True
     else:
+        print("Pin incorrecto")
         return False
-try:
-    for i in range(3):
-        pinf=input("Introduce tu pin: ")
-        pinfn=int(pinf)
-except ValueError:
-    print("Error, introduce un pin valido")
-while repetir == True:
-            try:
-                retirar=input("Ingrese cuanto quiere retirar: ")
-                retirarn=int(retirar)
-
-            except ValueError:
-                print("Error, ingrese un numero valido.")
-retirar_monto(retirarn)
-ver_mon(pinfn)
+def retirar_cantidad(montod,saldod):
+    try:
+        if montod<=saldod:
+            saldod=saldod-montod
+            print(f"Su saldo quedo en: {saldod}")
+        elif montod>saldod:
+            print("Fondos insuficientes")
+    except ValueError:
+        print("Ingresa un numero valido")
+print("🏦 Bienvenido al Banco Python")
+while True:
+    try:
+        input_pin = input("Ingrese su PIN: ")
+        pinint=int(input_pin)
+        break
+    except ValueError:
+        print("Ingrese numeros, no letras")
+if verificar_pin(pinint):
+    print("Acceso concedido. Saldo actual: ", saldo)
+    try:
+        montostr=input("¿Cuanto desea retirar?: ")
+        monto = int(montostr)
+        retirar_cantidad(monto,saldo)
+    except ValueError:
+        print("Ingrese un monto valido")
