@@ -1,0 +1,38 @@
+header{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 173, 155);
+    padding: 40px;
+    width: auto;
+    height: auto;
+}
+body a{
+    color: rgb(32, 83, 197);
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body li{
+    color:rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(236, 205, 200);
+}
+footer{
+    display: flex ;
+    justify-content: space-between;
+    align-items:space-between;  
+    position: fixed;
+    background-color: rgb(162, 168, 168);
+    bottom: 0;
+    width: 100%;
+}
+footer h3{
+    color: rgb(33, 19, 167);
+    display: flex;
+}
+footer h4{
+    color: rgb(15, 69, 131);
+    display: flex;
+}

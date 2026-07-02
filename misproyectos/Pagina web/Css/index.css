@@ -1,0 +1,47 @@
+header{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 180, 201);
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+header h2{
+    background-color: rgb(180, 191, 221);
+    align-items:center
+}
+header img{
+    display:flex;
+    justify-content: left;
+    align-items: left;
+    width: 70px;
+    height: 70px;
+}
+body{
+    background-color: rgb(204, 191, 191);
+}
+body a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+body li{
+    color: rgb(255, 16, 16);
+}
+footer{
+    display: flex ;
+    justify-content: space-between;
+    align-items:space-between;  
+    position: fixed;
+    background-color: rgb(162, 168, 168);
+    bottom: 0;
+    width: 100%;
+}
+footer h3{
+    color: rgb(33, 19, 167);
+    display: flex;
+}
+footer h4{
+    color: rgb(15, 69, 131);
+    display: flex;
+}
